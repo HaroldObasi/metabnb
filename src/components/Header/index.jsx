@@ -21,7 +21,7 @@ const index = () => {
     };
 
     return (
-        <header className="font-RedRose flex items-center py-10 justify-between">
+        <header className="flex items-center py-10 justify-between mb-16">
             <img src={logo} alt="" />
             <nav className="hidden xl:flex">
                 <ul className="list-none space-x-8">
