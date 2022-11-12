@@ -6,7 +6,7 @@ import Header from "./components/Header";
 
 function App() {
     return (
-        <div className="mx-6 md:mx-12 font-RedRose ">
+        <div className="font-RedRose ">
             <Header />
             <Router>
                 <Routes>
