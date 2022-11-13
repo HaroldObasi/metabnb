@@ -21,7 +21,7 @@ const index = () => {
     };
 
     return (
-        <header className="mx-6 md:mx-12 flex items-center py-10 justify-between mb-16">
+        <header className="mx-6 md:mx-12 flex items-center py-10 justify-between lg:mb-16">
             <img src={logo} alt="" />
             <nav className="hidden xl:flex">
                 <ul className="list-none space-x-8">
