@@ -17,7 +17,7 @@ const Modal = () => {
 
     return (
         //add back hidden
-        <div className="w-[600px] h-[325px] rounded-2xl bg-white fixed  coinModal z-20">
+        <div className="w-[350px] md:w-[600px] h-[325px] rounded-2xl bg-white hidden fixed  coinModal z-20">
             <div className="flex py-6 px-8 justify-between border-b border-gray-300">
                 <p className="font-bold text-[24px]">Connect Wallet</p>
                 <button onClick={close}>
