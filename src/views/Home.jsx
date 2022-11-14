@@ -3,10 +3,14 @@ import Fourboxes from "../components/Fourboxes";
 import Banner from "../components/Banner";
 import HomeListing from "../components/HomeListing";
 import threeWay from "../assets/images/3way.png";
+import Modal from "../components/Modal";
 
 const Home = () => {
     return (
         <div>
+            <div className="flex justify-center ">
+                <Modal />
+            </div>
             <main className="mx-6 md:mx-12 flex flex-col xl:flex-row">
                 <div className="basis-1/2 space-y-1 md:space-y-5 mb-10">
                     <div className="text-4xl xl:text-[56px] xl:leading-[5rem]">
