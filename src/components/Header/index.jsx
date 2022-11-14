@@ -4,6 +4,14 @@ import { links } from "./constants";
 import SideNav from "./SideNav";
 
 const index = () => {
+    const handleConnectWallet = () => {
+        const modal = document.getElementsByClassName("coinModal")[0];
+        const invisibleBackground =
+            document.getElementsByClassName("invisibleBack")[0];
+        invisibleBackground.classList.remove("hidden");
+        modal.classList.remove("hidden");
+    };
+
     const open = () => {
         const sideMenu = document.getElementsByClassName("sideMenu")[0];
         const invisibleBackground =
@@ -13,11 +21,14 @@ const index = () => {
     };
 
     const close = () => {
+        console.log("closed");
         const sideMenu = document.getElementsByClassName("sideMenu")[0];
         const invisibleBackground =
             document.getElementsByClassName("invisibleBack")[0];
+        const modal = document.getElementsByClassName("coinModal")[0];
         sideMenu.classList.add("hidden");
         invisibleBackground.classList.add("hidden");
+        modal.classList.add("hidden");
     };
 
     return (
@@ -40,12 +51,15 @@ const index = () => {
             />
             <SideNav />
 
-            <button className="hidden xl:flex rounded-md py-4 px-4 purpleGradient text-white">
+            <button
+                className="hidden xl:flex rounded-md py-4 px-4 purpleGradient text-white"
+                onClick={handleConnectWallet}
+            >
                 Connect Wallet
             </button>
             <div
                 onClick={close}
-                className="invisibleBack md:hidden z-10 h-full hidden w-full fixed top-0 left-0"
+                className="invisibleBack opacity-50 z-10 h-full hidden w-full bg-gray-600 fixed top-0 left-0"
             ></div>
         </header>
     );
