@@ -4,13 +4,8 @@ import star from "../assets/icons/star.svg";
 
 const Card = ({ img }) => {
     return (
-        <div className="border border-gray-400 rounded-[15px] inline-block px-3 py-5">
-            <img src={img} className="m-0 w-[260px] h-[265px]" alt="" />
-            <img
-                src={heart}
-                className="relative bottom-[255px] left-[225px]"
-                alt=""
-            />
+        <div className="border border-gray-400 rounded-[15px] inline-block px-3 py-3">
+            <img src={img} className="m-0 w-[260px] h-[265px] mb-2" alt="" />
             <div className="flex justify-between mb-1">
                 <p className="text-[12px]">Desert king</p>
                 <p className="text-[12px] font-bold">1MBT per night</p>
