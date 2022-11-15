@@ -1,5 +1,3 @@
-import image_3 from "./assets/images/image_3.png";
-
 import place1 from "./assets/places/place1.png";
 import place2 from "./assets/places/place2.png";
 import place3 from "./assets/places/place3.png";

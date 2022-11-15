@@ -1,5 +1,4 @@
 import Searchbar from "../components/Searchbar";
-import Fourboxes from "../components/Fourboxes";
 import Banner from "../components/Banner";
 import HomeListing from "../components/HomeListing";
 import threeWay from "../assets/images/3way.png";
