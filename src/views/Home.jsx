@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import HomeListing from "../components/HomeListing";
 import threeWay from "../assets/images/3way.png";
 import Modal from "../components/Modal";
+import fourboxes from "../assets/images/fourboxes.png";
 
 const Home = () => {
     return (
@@ -25,11 +26,11 @@ const Home = () => {
                         <Searchbar />
                     </div>
                 </div>
-                <Fourboxes />
+                <img src={fourboxes} alt="" />
             </main>
             <Banner />
             <HomeListing />
-            <div className="px-6 py-16 md:px-12 space-y-16 xl:space-y-0 purpleGradient flex flex-col xl:flex-row">
+            <div className="px-6 py-8 md:py-16 md:px-12 space-y-16 xl:space-y-0 purpleGradient flex flex-col xl:flex-row">
                 <div className="flex flex-col justify-center space-y-5 xl:space-y-16 basis-1/2">
                     <div className="text-4xl xl:text-[56px] text-white">
                         Metabnb NFTs
@@ -46,7 +47,7 @@ const Home = () => {
                 </div>
                 <img
                     src={threeWay}
-                    className="hidden xl:block basis-1/2"
+                    className="w-[300px] md:w-[400px] lg:w-full basis-1/2 self-center"
                     alt="3 images"
                 />
             </div>
