@@ -4,15 +4,15 @@ export const links = [
         name: "Home",
     },
     {
-        url: "/",
+        url: "/places",
         name: "Place to stay",
     },
     {
-        url: "/",
+        url: "",
         name: "NFTs",
     },
     {
-        url: "/",
+        url: "",
         name: "Community",
     },
 ];
